@@ -1,9 +1,11 @@
 let peticion_movimientos = new XMLHttpRequest() //creo un objeto de tipo XMLHttpRequest
+
 //funcion que recibe la respuesta del servidor 
 function peticion_movimientos_handler(){
-    if(this.readyState === 4){
-        if(this.satatus === 200){
-            alert(this.responseText)
+    if(this.readyState == 4 ){
+        if(this.satatus == 200){
+            const datajson = JSON.parse(this.responseText);
+            alert(datajson)
         }else{
             alert("se ha producido un error en la consulta");
         }

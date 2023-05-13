@@ -19,6 +19,7 @@ def select_all():
         lista_diccionario.append(diccionario)
 
     conectar.con.close() #cerramos la conexion 
+    
     return lista_diccionario
 
 def insert(registroForm):
