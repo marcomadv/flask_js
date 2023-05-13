@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos</title>
+    
+    <link rel="stylesheet" href="/static/css/pico.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/app.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            App Gestion de Movimientos
+        </div>
+
+    </header>
+    <section>
+        <h2>Movimientos</h2>
+        <nav>
+                <li><button id="btn_nuevo">Nuevo</button></li>           
+        </nav>
+        
+        <div id="movements_list">
+            <table id="movements_table">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Concepto</th>
+                    <th>Monto</th>
+                </tr>
+            </table>
+        </div>
+
+        <article id="movements_detail" class="inactive">
+            <form id="movements_form">
+                <input type="date" name="date" id="date">
+                <input type="text" name="concept" id="concept">
+                <input type="number" name="quantity" id="quantity">
+                <button id="btn_guardar">Guardar</button>
+            </form>
+            <div>
+                <button id="btn_cerrar">Cerrar</button>
+            </div>
+        </article>
+
+    </section>
+    <footer>
+        <div class="container">
+            &copy;2023-MM
+        </div>
+    </footer>
+
+</body>
+</html>
